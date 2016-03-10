@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<!-- stylesheet library -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    	<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    	<link href="css/animate.css" rel="stylesheet">
+    	<link href="css/style.css" rel="stylesheet">
+
+    	<!-- stylesheet customize -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Start Sidebar -->
+	    	<nav class="navbar-default navbar-static-side" role="navigation">
+	        <div class="sidebar-collapse">
+	            <ul class="nav" id="side-menu">
+	                <li class="nav-header snu_ci text-center">
+	                    <img src="./img/logo/snu_ci.png" alt="Seoul National Univ. logo" width="55%" height="55%">
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">플랫폼 관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="platform_01.html">사용자 메뉴관리</a></li>
+	                        <li>
+	                        		<a href="platform_03.html">관리자 권한관리</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="widgets.html"><i class="fa fa-th-large"></i><span class="nav-label">연계현황관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="connection.html">연계정보관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">시설 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="facility_01.html">시설 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">앱정보 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="appInfo_01.html">공지사항</a></li>
+	                        <li><a href="appInfo_03.html">사용자 가이드</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">비콘관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="beacon_01.html">비콘관리</a></li>
+	                    </ul>
+	                </li>
+	                <li class="active">
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">캠퍼스투어관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="campus_01.html">Spot 관리</a></li>
+	                        <li class="active"><a href="campus_03.html">Tour 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">행사/이벤트</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="event_01.html">행사/이벤트 현황</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">정보오류신고</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="infoError_01.html">정보오류 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">통계관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">선호도 현황</a></li>
+	                        <li><a href=".html">투어코스 이용현황</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	    	</nav>
+	    	<!-- End sidebar -->
+		
+		
+        	<div id="page-wrapper" class="gray-bg bg_white">
+			
+			<!-- Start page-wrapper -->
+	        	<div class="row border-bottom">
+			     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			            <div class="navbar-header">
+			            	<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			                <a class="minimalize-styl-2 snu_logo" href="#">캠퍼스 지도</a>
+			            </div>
+			            <ul class="nav navbar-top-links navbar-right">
+			            	<li>
+			                    <a href="#">
+			                        <i class="fa fa-user"></i> admin_user
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="login.html">
+			                        <i class="fa fa-sign-out"></i> Log out
+			                    </a>
+			                </li>
+			            </ul>
+			     </nav>
+	        	</div>
+	        	<!-- End page-wrapper -->
+	        	
+
+			<!-- Start location -->
+	          <div class="row wrapper white-bg page-heading">
+	                <div class="col-lg-10">
+	                    <ol class="breadcrumb">
+	                        <li>
+	                            <a href="index.html">home</a>
+	                        </li>
+	                        <li>
+	                            <a>캠퍼스 투어 관리</a>
+	                        </li>
+	                        <li class="active">
+	                            <strong>Tour 관리</strong>
+	                        </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	          </div>
+	          <!-- End location -->
+
+			<!-- Start content -->
+			
+			<div id="content">
+				<div class="wrapper wrapper-content animated fadeInRight no_margin_padding">
+					<div class="row">
+						<div class="col-lg-4 tab_section no_margin_padding">
+							<div class="ibox">
+								<div class="ibox-content no_margin_padding no_border">
+									<div class="panel blank-panel">
+					                        <div class="panel-heading no_margin_padding">
+					                            <div class="panel-options">
+					                                <ul class="nav nav-tabs">
+					                                    <li class="active"><a data-toggle="tab" href="#tab-1">상세정보</a></li>
+					                                    <li class=""><a data-toggle="tab" href="#tab-2">Spot</a></li>
+					                                    <li class=""><a data-toggle="tab" href="#tab-3">경로</a></li>
+					                                </ul>
+					                            </div>
+					                        </div>
+
+					                        <div class="panel-body no_margin_padding">
+					                            <div class="tab-content">
+					                                <div id="tab-1" class="tab-pane active">
+					                                    <div class="ibox-content no_border">
+					                                    		<form class="form-horizontal">
+								                                <div class="form-group">
+									                                	<div class="row m_b_5">
+									                                		<div class="col-sm-offset-1 col-sm-10">
+									                                			<input type="text" class="form-control"  placeholder="국문 Tour 명을 입력하세요.">
+									                                		</div>
+									                                	</div>
+									                                	<div class="row">
+									                                		<div class="col-sm-offset-1 col-sm-10">
+									                                			<input type="text" class="form-control"  placeholder="영문 Tour 명을 입력하세요.">
+									                                		</div>
+									                                	</div>
+															<div class="hr-line-dashed"></div>
+															<div class="row m_b_5">
+									                                		<div class="col-sm-offset-1 col-sm-10">
+									                                			<textarea class="form-control" rows="3" placeholder="국문 Tour 설명을 입력하세요."></textarea>		
+									                                		</div>
+									                                	</div>
+									                                	<div class="row m_b_5">
+									                                		<div class="col-sm-offset-1 col-sm-10">
+									                                			<textarea class="form-control" rows="3" placeholder="영문 Tour 설명을 입력하세요."></textarea>		
+									                                		</div>
+									                                	</div>
+															<div class="row">
+																<div class="col-sm-offset-4 col-sm-4">
+																	<a data-toggle="tab" href="#tab-2" id="next_btn_1" class="btn btn-success btn-block">다음</a>
+																</div>
+															</div>
+														</div>
+													</form>
+					                                    </div>
+					                                </div>
+
+					                                <div id="tab-2" class="tab-pane">
+					                                    <div class="ibox-content no_border">
+					                                    		<form class="form-horizontal">
+								                                <div class="form-group">
+								                                	<div class="row">
+								                                		<div class="col-xs-6 col-sm-offset-1 col-sm-5">
+								                                			<button type="button" class="btn btn-w-m btn-info btn-block" data-toggle="modal" data-target="#pointListModal">Point 불러오기</button>
+								                                		</div>
+								                                		<div class="col-xs-6 col-sm-5">
+								                                			<button type="button" class="btn btn-w-m btn-default btn-block">초기화</button>
+								                                		</div>
+								                                	</div>
+								                                	<div class="hr-line-dashed"></div>
+								                                	<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-1">
+							                                			 	<label style="margin-top: 6px;">1</label>
+								                                		</div>
+								                                		<div class="col-sm-9">
+							                                			 	<input type="text" class="form-control">
+							                                			 	<button type="button" class="btn btn-outline btn-danger btn-xs" style="display: inline-block; margin-bottom: 20px; position: absolute; top: 7px; right: 25px;">X</button>
+								                                		</div>
+								                                	</div>
+								                                	<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control" placeholder="사진파일을 입력하세요.">
+								                                			<button type="button" class="close del_txt_btn del_txt_btn2">X</button>
+								                                		</div>
+								                                		<div class="col-sm-1 file_input_div">
+								                                			<button type="button" class="btn btn-primary">불러오기</button>
+								                                			<input type="file" class="file_input_hidden">
+								                                		</div>
+								                                	</div>
+								                                	<div class="row view_img">
+								                                		<div class="col-sm-offset-1 col-sm-10">
+								                                			<img src="http://kmug.co.kr/board/data/image/SEOUL_University.jpg" alt="" width="100%">
+								                                		</div>
+								                                	</div>
+														<div class="hr-line-dashed"></div>
+														<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-1">
+							                                			 	<label style="margin-top: 6px;">2</label>
+								                                		</div>
+								                                		<div class="col-sm-9">
+							                                			 	<input type="text" class="form-control">
+							                                			 	<button type="button" class="btn btn-outline btn-danger btn-xs" style="display: inline-block; margin-bottom: 20px; position: absolute; top: 7px; right: 25px;">X</button>
+								                                		</div>
+								                                	</div>
+								                                	<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control" placeholder="사진파일을 입력하세요.">
+								                                			<button type="button" class="close del_txt_btn del_txt_btn2">X</button>
+								                                		</div>
+								                                		<div class="col-sm-3 file_input_div">
+								                                			<button type="button" class="btn btn-primary">불러오기</button>
+								                                			<input type="file" class="file_input_hidden">
+								                                		</div>
+								                                	</div>
+								                                	<div class="row view_img">
+								                                		<div class="col-sm-offset-1 col-sm-10">
+								                                			<img src="http://kmug.co.kr/board/data/image/SEOUL_University.jpg" alt="" width="100%">
+								                                		</div>
+								                                	</div>
+														<div class="hr-line-dashed"></div>
+														<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-1">
+							                                			 	<label style="margin-top: 6px;">3</label>
+								                                		</div>
+								                                		<div class="col-sm-9">
+							                                			 	<input type="text" class="form-control">
+							                                			 	<button type="button" class="btn btn-outline btn-danger btn-xs" style="display: inline-block; margin-bottom: 20px; position: absolute; top: 7px; right: 25px;">X</button>
+								                                		</div>
+								                                	</div>
+								                                	<div class="row m_b_5">
+								                                		<div class="col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control" placeholder="사진파일을 입력하세요.">
+								                                			<button type="button" class="close del_txt_btn del_txt_btn2">X</button>
+								                                		</div>
+								                                		<div class="col-sm-1 file_input_div">
+								                                			<button type="button" class="btn btn-primary">불러오기</button>
+								                                			<input type="file" class="file_input_hidden">
+								                                		</div>
+								                                	</div>
+								                                	<div class="row view_img">
+								                                		<div class="col-sm-offset-1 col-sm-10">
+								                                			<img src="http://kmug.co.kr/board/data/image/SEOUL_University.jpg" alt="" width="100%">
+								                                		</div>
+								                                	</div>
+														<div class="hr-line-dashed"></div>
+								                                	<div class="row">
+								                                		<div class="col-xs-offset-1 col-xs-7 col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control">
+								                                		</div>
+								                                		<label class="col-xs-2 col-sm-2 control-label">point</label>
+								                                	</div>
+								                                	<div class="hr-line-dashed"></div>
+								                                	<div class="row">
+								                                		<div class="col-xs-6 col-sm-offset-1 col-sm-5">
+								                                			<a data-toggle="tab" href="#tab-1" id="prev_btn_1" class="btn btn-success btn-block">이전</a>	
+								                                		</div>
+								                                		<div class="col-xs-6 col-sm-5">
+								                                			<a data-toggle="tab" href="#tab-3" id="next_btn_2" class="btn btn-success btn-block">다음</a>	
+								                                		</div>
+								                                	</div>
+								                                	<div class="modal inmodal no_background" id="pointListModal" tabindex="-1" role="dialog"  aria-hidden="true">
+										                               <div class="modal-dialog">
+										                                    <div class="modal-content animated fadeIn">
+										                                        <div class="modal-header no_margin_padding">
+										                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										                                            <h4 class="modal-title text-left"><i class="fa fa-asterisk"></i> 등록된 Point 불러오기</h4>
+										                                            <div class="row">
+										                                            	<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-9">
+										                                            		<input type="text" class="form-control">
+										                                            	</div>
+										                                            	<div class="col-xs-1 col-sm-1">
+										                                            		<button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
+										                                            	</div>
+										                                            </div>
+										                                        </div>
+										                                        <div class="modal-body no_margin_padding no_background">
+										                                            <div class="row">
+																                <div class="col-lg-12">
+																                    <div class="ibox float-e-margins">
+																                        <div class="ibox-content">
+																                            <div class="table-responsive">
+																                                <table class="table table-bordered">
+																                                	<colgroup>
+																                                		<col width="10%">
+																                                		<col width="90%">
+																                                	</colgroup>
+																                                    <tbody>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox"  class="i-checks" name="input[]"></td>
+																                                        <td>종합운동장</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>사회대학</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>미술관</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>정문</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>정문</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>정문</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>정문</td>
+																                                    </tr>
+																                                    <tr>
+																                                        <td class="text-center"><input type="checkbox" class="i-checks" name="input[]"></td>
+																                                        <td>정문</td>
+																                                    </tr>
+																                                    </tbody>
+																                                </table>
+																                            </div>
+																                            <nav class="text-center">
+																						  <ul class="pagination no_margin_padding">
+																						    <li>
+																						      <a href="#" aria-label="Previous">
+																						        <span aria-hidden="true">&laquo;</span>
+																						      </a>
+																						    </li>
+																						    <li><a href="#">1</a></li>
+																						    <li><a href="#">2</a></li>
+																						    <li><a href="#">3</a></li>
+																						    <li><a href="#">4</a></li>
+																						    <li><a href="#">5</a></li>
+																						    <li>
+																						      <a href="#" aria-label="Next">
+																						        <span aria-hidden="true">&raquo;</span>
+																						      </a>
+																						    </li>
+																						  </ul>
+																					  </nav>
+																                        </div>
+																                    </div>
+																                </div>
+																            </div>
+										                                        </div>
+										                                        <div class="modal-footer">
+										                                            <button type="button" class="btn btn-success">완료</button>
+										                                        </div>
+										                                    </div>
+										                               </div>
+										                          </div>
+														</div>
+													</form>
+					                                    </div>
+					                                </div>
+					                                <div id="tab-3" class="tab-pane">
+					                                    <div class="ibox-content no_border">
+					                                    		<form class="form-horizontal">
+								                                <div class="form-group">
+								                                	<div class="row">
+							                                			<div class="col-sm-offset-6 col-sm-5">
+								                                			<button type="button" class="btn btn-w-m btn-default btn-block">초기화</button>
+								                                		</div>
+								                                	</div>
+								                                	<div class="hr-line-dashed"></div>
+								                                	<div class="row">
+								                                		<div class="col-xs-offset-2 col-xs-7 col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control">
+								                                		</div>
+								                                		<label class="col-xs-2 col-sm-2 control-label">km</label>
+								                                	</div>
+								                                	<div class="hr-line-dashed"></div>
+								                                	<div class="row">
+								                                		<div class="col-xs-offset-2 col-xs-7 col-sm-offset-1 col-sm-7">
+								                                			<input type="text" class="form-control">
+								                                		</div>
+								                                		<label class="col-xs-2 col-sm-2 control-label">min</label>
+								                                	</div>
+								                                	<div class="hr-line-dashed"></div>
+								                                	<div class="row">
+								                                		<div class="col-xs-6 col-sm-offset-1 col-sm-5">
+								                                			<a data-toggle="tab" href="#tab-2" id="prev_btn_2" class="btn btn-w-m btn-default btn-block">이전</a>
+								                                		</div>
+								                                		<div class="col-xs-6 col-sm-5">
+								                                			<a href="campus_03.html" type="button" class="btn btn-w-m btn-success btn-block">완료</a>
+								                                		</div>
+								                                	</div>
+								                          	</div>
+								                          </form>
+					                                    </div>
+					                                </div>
+					                            </div>
+					                        </div>
+					                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 no_margin_padding">
+							<div class="ibox">
+			                        	<div class="ibox-content map">
+			                            	<img src="http://cfile4.uf.tistory.com/image/11076F4750A4AC3116A2D6" width="100%"/>
+			                        	</div>
+			                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- End content -->
+
+
+        		<!-- Start footer -->
+		     <div class="footer">
+		          <div>
+		               <strong>Copyright</strong> Seoul National Univ. &copy; 2014-2015
+		          </div>
+		     </div>
+		     <!-- End footer -->
+
+        	</div>
+     </div>
+	
+	<!-- JS library -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<script src="js/plugins/iCheck/icheck.min.js"></script>
+	<!-- javascript customize -->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// tab control
+			$('#next_btn_1').on('click', function() {
+				$('.nav-tabs li').removeClass('active');
+				$('.nav-tabs li').eq(1).addClass('active');
+			});
+			$('#next_btn_2').on('click', function() {
+				$('.nav-tabs li').removeClass('active');
+				$('.nav-tabs li').eq(2).addClass('active');
+			});
+
+			$('#prev_btn_1').on('click', function() {
+				$('.nav-tabs li').removeClass('active');
+				$('.nav-tabs li').eq(0).addClass('active');
+			});
+
+			$('#prev_btn_2').on('click', function() {
+				$('.nav-tabs li').removeClass('active');
+				$('.nav-tabs li').eq(1).addClass('active');
+			});
+
+			// checkbox style
+			$('.i-checks').iCheck({
+	                checkboxClass: 'icheckbox_square-green'
+	           });
+		});
+	</script>
+</body>
+</html>

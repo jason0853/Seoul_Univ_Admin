@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<!-- stylesheet library -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="css/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    	<!-- stylesheet customize -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Start Sidebar -->
+	    	<nav class="navbar-default navbar-static-side" role="navigation">
+	        <div class="sidebar-collapse">
+	            <ul class="nav" id="side-menu">
+	                <li class="nav-header snu_ci text-center">
+	                    <img src="./img/logo/snu_ci.png" alt="Seoul National Univ. logo" width="55%" height="55%">
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">플랫폼 관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="platform_01.html">사용자 메뉴관리</a></li>
+	                        <li>
+	                        		<a href="platform_03.html">관리자 권한관리</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="widgets.html"><i class="fa fa-th-large"></i> <span class="nav-label">연계현황관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">연계정보조관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">시설 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="facility_01.html">시설 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">앱정보 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="appInfo_01.html">공지사항</a></li>
+	                        <li><a href="appInfo_03.html">사용자 가이드</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">비콘관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="beacon_01.html">비콘관리</a></li>
+	                    </ul>
+	                </li>
+	                <li class="active">
+	                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">캠퍼스투어관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="campus_01.html">Spot 관리</a></li>
+	                        <li class="active"><a href="campus_03.html">Tour 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">행사/이벤트</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="event_01.html">행사/이벤트 현황</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">정보오류신고</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="infoError_01.html">정보오류 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">통계관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">선호도 현황</a></li>
+	                        <li><a href=".html">투어코스 이용현황</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	    	</nav>
+	    	<!-- End sidebar -->
+		
+		
+        	<div id="page-wrapper" class="gray-bg white-bg">
+			
+			<!-- Start page-wrapper -->
+	        	<div class="row border-bottom">
+			     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			            <div class="navbar-header">
+			            	<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			                <a class="minimalize-styl-2 snu_logo" href="#">캠퍼스 지도</a>
+			            </div>
+			            <ul class="nav navbar-top-links navbar-right">
+			            	<li>
+			                    <a href="#">
+			                        <i class="fa fa-user"></i> admin_user
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="login.html">
+			                        <i class="fa fa-sign-out"></i> Log out
+			                    </a>
+			                </li>
+			            </ul>
+			     </nav>
+	        	</div>
+	        	<!-- End page-wrapper -->
+	        	
+
+			<!-- Start location -->
+	          <div class="row wrapper white-bg page-heading">
+	                <div class="col-lg-10">
+	                    <ol class="breadcrumb">
+	                        <li>
+	                            <a href="index.html">home</a>
+	                        </li>
+	                        <li>
+	                            <a>캠퍼스 투어 관리</a>
+	                        </li>
+	                        <li class="active">
+	                            <strong>Tour 관리</strong>
+	                        </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	          </div>
+	          <!-- End location -->
+
+			<!-- Start content -->
+			
+			<div id="content">
+				<div class="wrapper wrapper-content animated fadeInRight no_margin_padding">
+					<form method="" action="">
+						<div class="row" style="border-top: 4px solid #ddd;"></div>
+						<div class="row spot_section">
+							<div class="col-lg-12">
+								<div class="ibox">
+								<div class="col-lg-12 text-right">
+					                    <a href="campus_04.html" type="button" class="btn btn-w-m btn-success">등록</a> 
+					                </div>
+				           			<div class="ibox-content no_border">
+				           				<div class="jqGrid_wrapper">
+				                                <table id="tour_table_list"></table>
+				                                <div id="tour_pager_list"></div>
+				                           </div>
+				                           <button class="btn btn-w-m btn-default" style="margin-top: 5px;">엑셀다운로드</button>
+				           			</div>	
+				           		</div>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+			
+
+			<!-- End content -->
+
+
+        		<!-- Start footer -->
+		     <div class="footer">
+		          <div>
+		               <strong>Copyright</strong> Seoul National Univ. &copy; 2014-2015
+		          </div>
+		     </div>
+		     <!-- End footer -->
+
+        	</div>
+     </div>
+	
+	<!-- JS library -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<script src="js/plugins/jqGrid/i18n/grid.locale-en.js"></script>
+    	<script src="js/plugins/jqGrid/jquery.jqGrid.min.js"></script>
+	<!-- javascript customize -->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Examle data for jqGrid
+	          var mydata = [
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''},
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''},
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''},
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''},
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''},
+	                {index: '1', tourName: '도보투어', tourPicture: true, startPlace: '서울대학교 정문', stopPlace: '도착지', distance: '3km', totalTime: '60 min', spotNumber: '18', mark: true, tourDescription: '규장각 관람 후, 자하연을 거쳐 중앙도서관까지 걸으며 사회대학, 법과대학, 인문대학의 일부를 통과하는 코스입니다.', activation: ''}
+	          ];
+
+	          // Configuration for jqGrid Example 1
+	          $("#tour_table_list").jqGrid({
+	                data: mydata,
+	                datatype: "local",
+	                height: 500,
+	                autowidth: true,
+	                shrinkToFit: true,
+	                rowNum: 14,
+	                rowList: [10, 20, 30],
+	                multiselect: true,
+	                colNames: ['No', '투어 명', '투어 이미지', '출발지', '도착지', '거리', '총 시간', 'Spot 개수', '평점', '투어 설명', '활성화'],
+	                colModel: [
+	                    	{name: 'index', id: 'index', width: 20, sorttype: "int", align: 'center'},
+	                    	{name: 'tourName', id: 'tourName', width: 30, align: 'center'},
+	                    	{name: 'tourPicture', id: 'tourPicture', width: 40, align: 'center', formatter: imageFormat},
+	                    	{name: 'startPlace', id: 'startPlace', width: 30, align: 'center'},
+	                    	{name: 'stopPlace', id: 'stopPlace', width: 30, align: 'center'},
+	                    	{name: 'distance', id: 'distance', width: 30, align: 'center'},
+	                    	{name: 'totalTime', id: 'totalTime', width: 30, align: 'center'},
+	                    	{name: 'spotNumber', id: 'spotNumber', width: 30, align: 'center'},
+	                    	{name: 'mark', id: 'mark', width: 30, align: 'center', formatter: markFormat},
+	                    	{name: 'tourDescription', id: 'tourDescription', width: 30, align: 'center'},
+	                    	{name: 'activation', id: 'activation', width: 30, align: 'center', formatter: playFormat}
+	                ],
+	                pager: "#tour_pager_list",
+	                viewrecords: true,
+	                hidegrid: false,
+	                multiboxonly: true,
+	                beforeSelectRow: function(rowid, e) {
+	                	// prevent checkbox event when row is selected
+	                	return $(e.target).is("input[type=checkbox]");
+	                },
+	                loadComplete: function() {
+	                	 // row highlight toggle
+	                	 $(this).find('input[type=checkbox]').click(function() {
+	                	 	if ($(this).is(':checked') == true) {
+	                	 		$(this).parent().parent().addClass('ui-state-highlight');
+	                	 	} else {
+	                	 		$(this).parent().parent().removeClass('ui-state-highlight');
+	                	 	}
+	                	 });
+	                }
+	          });
+			
+			// jqGrid responsive
+	        	$(window).bind('resize', function () {
+	            	var width = $('.jqGrid_wrapper').width();
+	            	$('#tour_table_list').setGridWidth(width);
+	        	});
+				
+		});
+		
+		function imageFormat( cellvalue, options, rowObject ){
+	        	return '<img src="http://kmug.co.kr/board/data/image/SEOUL_University.jpg" width="100%" />';
+	    	}
+
+	    	// mark image
+	    	function markFormat( cellvalue, options, rowObject ){
+	        	return '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>';
+	    	}
+
+	    	/*  activation image */
+	    	// play image
+	    	function playFormat( cellvalue, options, rowObject ){
+	        	return '<i class="fa fa-play"></i>';
+	    	}
+
+	    	// pause image
+	    	function pauseFormat( cellvalue, options, rowObject ){
+	        	return '<i class="fa fa-pause"></i>';
+	    	}
+
+	</script>
+</body>
+</html>

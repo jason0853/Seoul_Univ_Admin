@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<!-- stylesheet library -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    	<!-- stylesheet customize -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Start Sidebar -->
+	    	<nav class="navbar-default navbar-static-side" role="navigation">
+	        <div class="sidebar-collapse">
+	            <ul class="nav" id="side-menu">
+	                <li class="nav-header snu_ci text-center">
+	                    <img src="./img/logo/snu_ci.png" alt="Seoul National Univ. logo" width="55%" height="55%">
+	                </li>
+	                 <li class="active">
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">플랫폼 관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="platform_01.html">사용자 메뉴관리</a></li>
+	                        <li>
+	                        		<a href="platform_03.html">관리자 권한관리</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href=".html"><i class="fa fa-th-large"></i><span class="nav-label">연계현황관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="connection.html">연계정보관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">시설 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="facility_01.html">시설 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">앱정보 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="appInfo_01.html">공지사항</a></li>
+	                        <li><a href="appInfo_03.html">사용자 가이드</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">비콘관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="beacon_01.html">비콘관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">캠퍼스투어관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="campus_01.html">Spot 관리</a></li>
+	                        <li><a href="campus_03.html">Tour 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">행사/이벤트</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="event_01.html">행사/이벤트 현황</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">정보오류신고</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        	<li><a href="infoError_01.html">오류 관리자 관리</a></li>
+						<li class="active"><a href="infoError_03.html">시설정보 오류</a></li>
+						<li><a href="infoError_05.html">길찾기/지도 오류</a></li>
+						<li><a href="infoError_07.html">행사/이벤트 오류</a></li>
+						<li><a href="infoError_09.html">캠퍼스투어 오류</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">통계관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">검색이용 현황</a></li>
+	                        <li><a href=".html">식당 선호도 현황</a></li>
+	                        <li><a href=".html">투어코스 이용현황</a></li>
+	                        <li><a href=".html">앱 통계</a></li>
+	                    </ul>
+	                </li>
+
+	            </ul>
+	        </div>
+	    	</nav> 
+	    	<!-- End sidebar -->
+		
+		
+        	<div id="page-wrapper" class="gray-bg white-bg">
+			<!-- Start page-wrapper -->
+	        	<div class="row border-bottom">
+			     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			            <div class="navbar-header">
+			            	<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			                <a class="minimalize-styl-2 snu_logo" href="#">캠퍼스 지도</a>
+			            </div>
+			            <ul class="nav navbar-top-links navbar-right">
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-user"></i> admin_user
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-sign-out"></i> Log out
+			                    </a>
+			                </li>
+			            </ul>
+			     </nav>
+	        	</div>
+	        	<!-- End page-wrapper -->
+	        	
+
+			<!-- Start location -->
+	          <div class="row wrapper white-bg page-heading">
+	                <div class="col-lg-10">
+	                    <ol class="breadcrumb">
+	                        <li>
+	                            <a href="index.html">home</a>
+	                        </li>
+	                        <li>
+	                            <a>플랫폼 관리</a>
+	                        </li>
+	                        <li class="active">
+	                            <strong>사용자 메뉴 관리</strong>
+	                        </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	          </div>
+	          <!-- End location -->
+
+			<!-- Start content -->
+			
+			<div id="content">
+				<div class="wrapper wrapper-content animated fadeInRight no_margin_padding">
+					<div class="row">
+						<div class="ibox">
+							<div class="ibox-content">
+								<div class="row">
+									<div class="col-sm-2">
+										<h3>관리자 선택</h3>
+									</div>
+									<div class="col-sm-3">
+										<select name="" id="" class="form-control">
+											<option value="">시설지원과</option>
+										</select>
+									</div>
+									<div class="col-sm-3">
+										<select name="" id="" class="form-control">
+											<option value="">박보검</option>
+										</select>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+
+								<!-- <div style="text-align: center; margin-top: 80px;">
+									<div style="width: 50%; margin: 0 auto; ">
+										<h2 style="padding-bottom: 10px; font-size: 20px; font-weight: bold; border-bottom: 2px solid #274dc5;">서울대학교 캠퍼스맵 정보오류 신고 전달 합니다.</h2>
+										<p>안녕하세요 서울대학교 000본부입니다.</p>
+									</div>
+									<div style="margin: 50px 0;">
+										<table style="margin: 0 auto;">
+											<colgroup>
+												<col width="20%" />
+												<col width="80%" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th nowrap style="padding: 20px 30px; border: 1px solid #ddd; text-align: center;">오류구분</th>
+													<td style="padding-left: 10px; text-align: left;border: 1px solid #ddd;">정보오류 신고</td>
+												</tr>
+												<tr>
+													<th nowrap style="padding: 20px 30px; border: 1px solid #ddd; text-align: center;">오류내용</th>
+													<td style="padding-left: 10px; text-align: left;border: 1px solid #ddd;">101동 건물정보가 잘못 표시되고 있습니다.</td>
+												</tr>
+												<tr>
+													<th nowrap style="padding: 20px 30px; border: 1px solid #ddd; text-align: center;">오류신고 일시</th>
+													<td style="padding-left: 10px; text-align: left;border: 1px solid #ddd;">2016.02.10 09:00:00</td>
+												</tr>
+												<tr>
+													<th nowrap style="padding: 20px 30px; border: 1px solid #ddd; text-align: center;">첨부파일</th>
+													<td style="padding-left: 10px; text-align: left;border: 1px solid #ddd;">as83.d8s.jpg, as83.d8s.jpg, as83.d8s.jpg</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div> -->
+								<div class="row" style="margin-top: 90px;">
+									<div class="col-sm-offset-2 col-sm-8 text-center">
+										<h2><i class="fa fa-asterisk"></i> 서울대학교 캠퍼스맵 정보오류 신고 전달 합니다.</h2>
+										<div class="hr-line-dashed"></div>
+										<p>안녕하세요 서울대학교 000본부입니다.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-offset-2 col-sm-8 text-center">
+										<table class="table table-bordered register_table">
+											<tbody>
+												<tr>
+													<th nowrap class="text-left">오류구분</th>
+													<td class="text-left">정보오류 신고</td>
+												</tr>
+												<tr>
+													<th nowrap class="text-left">오류내용</th>
+													<td class="text-left">101동 건물정보가 잘못 표시되고 있습니다.</td>
+												</tr>
+												<tr>
+													<th nowrap class="text-left">오류신고 일시</th>
+													<td class="text-left">2016.02.10 09:00:00   </td>
+												</tr>
+												<tr>
+													<th nowrap class="text-left">첨부파일</th>
+													<td class="text-left">as83.d8s.jpg, as83.d8s.jpg, as83.d8s.jpg</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-offset-2 col-sm-8 text-center">
+										<a type="button" class="btn btn-w-m btn-success">메일 보내기</a>
+										<a href="infoError_01.html" type="button" class="btn btn-w-m btn-success">정보 수정완료</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- End content -->
+
+
+        		<!-- Start footer -->
+		     <div class="footer">
+		          <div>
+		               <strong>Copyright</strong> Seoul National Univ. &copy; 2014-2015
+		          </div>
+		     </div>
+		     <!-- End footer -->
+
+        	</div>
+     </div>
+	
+	<!-- JS library -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<script src="js/plugins/iCheck/icheck.min.js"></script>
+	<!-- javascript customize -->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    radioClass: 'iradio_square-green',
+                });
+            });
+        </script>
+	</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<!-- stylesheet library -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    	<!-- stylesheet customize -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Start Sidebar -->
+	    	<nav class="navbar-default navbar-static-side" role="navigation">
+	        <div class="sidebar-collapse">
+	            <ul class="nav" id="side-menu">
+	                <li class="nav-header snu_ci text-center">
+	                    <img src="./img/logo/snu_ci.png" alt="Seoul National Univ. logo" width="55%" height="55%">
+	                </li>
+	                 <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">플랫폼 관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="platform_01.html">사용자 메뉴관리</a></li>
+	                        <li>
+	                        	<a href="platform_03.html">관리자 권한관리</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href=".html"><i class="fa fa-th-large"></i><span class="nav-label">연계현황관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="connection.html">연계정보관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">시설 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="facility_01.html">시설 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">앱정보 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="appInfo_01.html">공지사항</a></li>
+	                        <li><a href="appInfo_03.html">사용자 가이드</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">비콘관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="beacon_01.html">비콘관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">캠퍼스투어관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="campus_01.html">Spot 관리</a></li>
+	                        <li><a href="campus_03.html">Tour 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li class="active">
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">행사/이벤트</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li class="active"><a href="event_01.html">행사/이벤트 현황</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">정보오류신고</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="infoError_01.html">정보오류 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">통계관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">검색이용 현황</a></li>
+	                        <li><a href=".html">식당 선호도 현황</a></li>
+	                        <li><a href=".html">투어코스 이용현황</a></li>
+	                        <li><a href=".html">앱 통계</a></li>
+	                    </ul>
+	                </li>
+
+	            </ul>
+	        </div>
+	    	</nav> 
+	    	<!-- End sidebar -->
+		
+		
+        	<div id="page-wrapper" class="gray-bg">
+			<!-- Start page-wrapper -->
+	        	<div class="row border-bottom">
+			     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			            <div class="navbar-header">
+			            	<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			                <a class="minimalize-styl-2 snu_logo" href="#">캠퍼스 지도</a>
+			            </div>
+			            <ul class="nav navbar-top-links navbar-right">
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-user"></i> admin_user
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-sign-out"></i> Log out
+			                    </a>
+			                </li>
+			            </ul>
+			     </nav>
+	        	</div>
+	        	<!-- End page-wrapper -->
+	        	
+
+			<!-- Start location -->
+	          <div class="row wrapper white-bg page-heading">
+	                <div class="col-lg-10">
+	                    <ol class="breadcrumb">
+	                        <li>
+	                            <a href="index.html">home</a>
+	                        </li>
+	                        <li>
+	                            <a>행사/이벤트</a>
+	                        </li>
+	                        <li class="active">
+	                            <strong>행사/이벤트 현황</strong>
+	                        </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	          </div>
+	          <!-- End location -->
+
+			<!-- Start content -->
+			
+			<div id="content">
+				<div class="wrapper wrapper-content animated fadeInRight no_margin_padding">
+					<div class="row">
+						<div class="ibox">
+							<div class="ibox-content">
+								<div class="row">
+									<div class="col-sm-12">
+										<table class="table table-bordered">
+											<colgroup>
+												<col width="20%">
+												<col width="80%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th nowrap class="no_background" style="border-right: none; vertical-align: middle;">우선순위설정</th>
+													<th style="border-left: none;" class="no_background text-right"><button type="button" class="btn btn-success">저장</button></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="table_th_bg" nowrap>카테고리</th>
+													<td>
+														<div class="form-group">
+												                <div class="input-group">
+													                <select data-placeholder="카테고리를 선택하세요." class="chosen-select" multiple style="width:350px;" tabindex="4">
+														                <option value="">Select</option>
+														                <option value="학사">학사</option>
+														                <option value="공연">공연</option>
+														                <option value="취업">취업</option>
+														                <option value="취업">기타</option>
+														                <option value="취업">전시</option>
+														                <option value="취업">영화</option>
+														                <option value="취업">컨퍼런스</option>
+														                <option value="취업">교육 / 강연</option>
+														                <option value="취업">동호회</option>
+														                <option value="취업">스포츠</option>
+														                <option value="취업">공모</option>
+														                <option value="취업">모집</option>
+														           </select>
+														     </div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="table_th_bg" nowrap>이벤트 일정</th>
+													<td>
+														<select class="form-control" style="width: 350px;">
+															<option>시작일</option>
+															<option>마감일</option>
+														</select>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</div>
+								<div class="row">
+									<div class="col-xs-4 col-sm-4">
+										<input type="text" class="form-control" placeholder="건물명이나 동번호를 입력하세요.">
+										<button type="button" class="close del_txt_btn">X</button>
+									</div>
+									<div class="col-xs-4 col-sm-2">
+										<button type="button" class="btn btn-info">검색</button>
+									</div>
+									<div class="col-sm-6 text-right">
+										<a href="event_02.html" type="button" class="btn btn-success">이벤트 알림 등록</a>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="jqGrid_wrapper">
+					                                	<table id="event_table_list"></table>
+					                                	<div id="event_pager_list"></div>
+					                          	</div>
+									</div>
+								</div>
+								<button class="btn btn-w-m btn-default" style="margin-top: 5px;">엑셀다운로드</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End content -->
+
+
+        		<!-- Start footer -->
+		     <div class="footer">
+		          <div>
+		               <strong>Copyright</strong> Seoul National Univ. &copy; 2014-2015
+		          </div>
+		     </div>
+		     <!-- End footer -->
+
+        	</div>
+     </div>
+	
+	<!-- JS library -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+	<script src="js/plugins/jqGrid/i18n/grid.locale-en.js"></script>
+    	<script src="js/plugins/jqGrid/jquery.jqGrid.min.js"></script>
+	<!-- javascript customize -->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Examle data for jqGrid
+	          var eventData = [
+	                {category: '학사', eventTitle: '<인간학개론-나는 누구이며 어떻게 살 것인가> 교양 교과목 안내', period: '2016/01/29 ~ 2016/03/11', dong: '63', buildName: '연구공원본관', eventAlarmPlace: '연공원_정문', preference: '', registerDate: '2016-02-06 18:20', status: '활성'},
+	          ];
+
+	          // Configuration for jqGrid
+	          $("#event_table_list").jqGrid({
+	                data: eventData,
+	                datatype: "local",
+	                height: 500,
+	                autowidth: true,
+	                shrinkToFit: true,
+	                rowNum: 14,
+	                rowList: [10, 20, 30],
+	                multiselect: false,
+	                colNames: ['분류', '이벤트 제목', '기간', '동', '건물명', '이벤트 알림 장소', '선호도', '등록일', '상태'],
+	                colModel: [
+	                    	{name: 'category', id: 'category', width: 30, align: 'center'},
+	                    	{name: 'eventTitle', id: 'eventTitle', width: 20, align: 'center'},
+	                    	{name: 'period', id: 'period', width: 20, align: 'center'},
+	                    	{name: 'dong', id: 'dong', width: 20, sorttype: "int", align: 'center'},
+	                    	{name: 'buildName', id: 'buildName', width: 30, align: 'center'},
+	                    	{name: 'eventAlarmPlace', id: 'eventAlarmPlace', width: 40, align: 'center'},
+					{name: 'preference', id: 'preference', width: 40, align: 'center'},
+					{name: 'registerDate', id: 'registerDate', width: 40, align: 'center'},
+					{name: 'status', id: 'status', width: 40, align: 'center'}
+	                ],
+	                pager: "#event_pager_list",
+	                viewrecords: true,
+	                hidegrid: false,
+	                multiboxonly: true,
+	                beforeSelectRow: function(rowid, e) {
+	                	// prevent checkbox event when row is selected
+	                	return $(e.target).is("input[type=checkbox]");
+	                },
+	                loadComplete: function() {
+	                	 // row highlight toggle
+	                	 $(this).find('input[type=checkbox]').click(function() {
+	                	 	if ($(this).is(':checked') == true) {
+	                	 		$(this).parent().parent().addClass('ui-state-highlight');
+	                	 	} else {
+	                	 		$(this).parent().parent().removeClass('ui-state-highlight');
+	                	 	}
+	                	 });
+	                }
+	          });
+
+			
+			// jqGrid responsive
+			$(window).bind('resize', function () {
+		            var width = $('.jqGrid_wrapper').width();
+		            $('#event_table_list').setGridWidth(width);
+	        	});
+
+			// multi select
+			var config = {
+	                '.chosen-select'           : {},
+	                '.chosen-select-deselect'  : {allow_single_deselect:true},
+	                '.chosen-select-no-single' : {disable_search_threshold:10},
+	                '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+	                '.chosen-select-width'     : {width:"95%"}
+	            }
+	            for (var selector in config) {
+	                $(selector).chosen(config[selector]);
+	            }
+		});
+
+	</script>
+</body>
+</html>

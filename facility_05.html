@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<!-- stylesheet library -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="css/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    	<!-- stylesheet customize -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- Start Sidebar -->
+	    	<nav class="navbar-default navbar-static-side" role="navigation">
+	        <div class="sidebar-collapse">
+	            <ul class="nav" id="side-menu">
+	                <li class="nav-header snu_ci text-center">
+	                    <img src="./img/logo/snu_ci.png" alt="Seoul National Univ. logo" width="55%" height="55%">
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">플랫폼 관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="platform_01.html">사용자 메뉴관리</a></li>
+	                        <li>
+	                        		<a href="platform_03.html">관리자 권한관리</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="widgets.html"><i class="fa fa-th-large"></i><span class="nav-label">연계현황관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="connection.html">연계정보관리</a></li>
+	                    </ul>
+	                </li>
+	                <li class="active">
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">시설 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li class="active"><a href="facility_01.html">시설 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">앱정보 관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="appInfo_01.html">공지사항</a></li>
+	                        <li><a href="appInfo_03.html">사용자 가이드</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">비콘관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="beacon_01.html">비콘관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">캠퍼스투어관리</span> <span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="campus_01.html">Spot 관리</a></li>
+	                        <li><a href="campus_03.html">Tour 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">행사/이벤트</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="event_01.html">행사/이벤트 현황</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">정보오류신고</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href="infoError_01.html">정보오류 관리</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="#"><i class="fa fa-th-large"></i><span class="nav-label">통계관리</span><span class="fa arrow"></span></a>
+	                    <ul class="nav nav-second-level">
+	                        <li><a href=".html">검색이용 현황</a></li>
+	                        <li><a href=".html">식당 선호도 현황</a></li>
+	                        <li><a href=".html">투어코스 이용현황</a></li>
+	                        <li><a href=".html">앱 통계</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	    	</nav>
+	    	<!-- End sidebar -->
+		
+		
+        	<div id="page-wrapper" class="gray-bg">
+			
+			<!-- Start page-wrapper -->
+	        	<div class="row border-bottom">
+			     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			            <div class="navbar-header">
+			            	<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			                <a class="minimalize-styl-2 snu_logo" href="#">캠퍼스 지도</a>
+			            </div>
+			            <ul class="nav navbar-top-links navbar-right">
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-user"></i> admin_user
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#">
+			                        <i class="fa fa-sign-out"></i> Log out
+			                    </a>
+			                </li>
+			            </ul>
+			     </nav>
+	        	</div>
+	        	<!-- End page-wrapper -->
+	        	
+
+			<!-- Start location -->
+	          <div class="row wrapper white-bg page-heading">
+	                <div class="col-lg-10">
+	                    <ol class="breadcrumb">
+	                        <li>
+	                            <a href="index.html">home</a>
+	                        </li>
+	                        <li>
+	                            <a>시설 관리</a>
+	                        </li>
+	                        <li class="active">
+	                            <strong>시설 관리</strong>
+	                        </li>
+	                    </ol>
+	                </div>
+	                <div class="col-lg-2">
+
+	                </div>
+	          </div>
+	          <!-- End location -->
+
+			<!-- Start content -->
+			
+			<div id="content">
+				<div class="wrapper wrapper-content animated fadeInRight no_margin_padding">
+					<div class="row">
+						<div class="ibox">
+							<!-- <div class="ibox-title">
+								<form action="" method="" class="form-horizontal">
+									<div class="form-group">
+										<div class="col-xs-6 col-sm-3">
+											<select name="" class="form-control snu_category">
+												<option value="">관악캠퍼스</option>
+												<option value="">연건캠퍼스</option>
+											</select>
+										</div>
+										<div class="col-sm-offset-7 col-sm-2 text-right">
+											총 <span>247</span>건
+										</div>
+									</div>
+								</form>
+							</div> -->
+							<div class="ibox-content no_margin_padding" style="overflow: initial;">
+								<div class="row tab-panels">
+									<div class="col-sm-3" style="padding-right: 0;">
+										<ul class="tabs">
+											<li rel="panel1">식당 (20)</li>
+											<li rel="panel2">카페 / 편의점 (30)</li>
+											<li rel="panel3">은행 / ATM / 우체국 (10)</li>
+											<li rel="panel4">병원 / 건강 / 약국 (20)</li>
+											<li rel="panel5">서점 / 기념품 / 문구 (20)</li>
+											<li rel="panel6">도서관 (20)</li>
+											<li rel="panel7" class="panelActive">주차장 / 나들문 (20)</li>
+											<li rel="panel8">장애인 시설 (20)</li>
+											<li rel="panel9">정보검색실 (20)</li>
+											<li rel="panel10">학과사무실 / 행정실 (20)</li>
+											<li rel="panel11">버스정류장 (20)</li>
+										</ul>
+										<button id="addCategory" class="btn btn-w-m btn-success btn-block" data-toggle="modal" data-target="#categoryModal">+ 카테고리 추가</button>
+										<ul class="tabs_category">
+											<li class="add_category_li">
+												<p class="">가스충전소 (1)</p>
+												<p class="">Gas Station</p>
+												<button class="btn btn-default btn-xs edit_category_btn" data-toggle="modal" data-target="#editCategoryModal"><i class="fa fa-pencil"></i></button>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-9 no_margin_padding">
+										<div class="row" style="margin: 20px 35px 20px 20px;">
+											<form class="col-sm-12">
+												<table class="table table-bordered">
+													<colgroup>
+														<col width="20%">
+														<col width="80%">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th class="table_th_bg">캠퍼스 <span class="necessary">*</span></th>
+															<td>
+																<select class="form-control" style="width: 150px;">
+																	<option value="">관악캠퍼스</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<th class="table_th_bg">분류 <span class="necessary">*</span></th>
+															<td>
+																<select class="form-control" style="width: 150px;">
+																	<option value="">주차장</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<th class="table_th_bg">세부 위치 명 <span class="necessary">*</span></th>
+															<td><input type="text" class="form-control" style="width: 350px;" /></td>
+														</tr>
+														<tr>
+															<th class="table_th_bg">Tag</th>
+															<td><input type="text" class="form-control" style="width: 350px;" /></td>
+														</tr>
+													</tbody>
+												</table>
+												<div style="margin-left: 20px;">
+													<p><strong>영역 설정 : </strong>마우스 클릭으로 선을 그려 도형을 만들고 시작점과 만났을 경우 도형 생성 완료</p>
+													<p><strong>Spot 설정 설정 : </strong>그리기 버튼을 누르고 더블 클릭 시 spot 생성 완료</p>
+												</div>
+												<div class="hr-line-dashed"></div>
+												<div class="ibox">
+													<img src="http://cfile4.uf.tistory.com/image/11076F4750A4AC3116A2D6" width="100%">
+												</div>
+												<div class="text-center">
+													<a href="facility_01.html" class="btn btn-success btn-w-m" style="margin-bottom:30px;">저장</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+			<!-- End content -->
+
+
+        		<!-- Start footer -->
+		     <div class="footer">
+		          <div>
+		               <strong>Copyright</strong> Seoul National Univ. &copy; 2014-2015
+		          </div>
+		     </div>
+		     <!-- End footer -->
+			
+			<!-- Start categoryModal -->
+			<div class="modal inmodal fade" id="categoryModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                          <div class="modal-content">
+                              <div class="modal-header no_margin_padding">
+                                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                  <h4 class="modal-title text-left"><i class="fa fa-asterisk"></i> 카테고리 관리</h4>
+                              </div>
+                              <div class="modal-body no_margin_padding no_background">
+                                  <div class="row">
+				                <div class="col-lg-12">
+				                    <div class="ibox float-e-margins">
+				                        <div class="ibox-content">
+				                        	<div class="row">
+				                        		<div class="col-sm-12">
+	                                            		<input type="text" id="category_korean_01" class="form-control" placeholder="카테고리 국문명을 입력해주세요.">
+	                                            	</div>
+				                        	</div>
+                                            	<div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<input type="text" class="form-control" placeholder="카테고리 영문명을 입력해주세요.">
+	                                            	</div>
+	                                          </div>
+	                                          <div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<label>카테고리명은 10까지만 입력 가능합니다.</label>
+	                                            	</div>
+	                                          </div>
+	                                          <div class="hr-line-dashed"></div>
+		                                	<div class="row">
+		                                		<div class="col-xs-9 col-sm-9">
+		                                			<input type="text" class="form-control" placeholder="아이콘 파일을 입력하세요.">
+		                                			<button type="button" class="close del_txt_btn">X</button>
+		                                		</div>
+		                                		<div class="col-xs-3 col-sm-3 file_input_div file_input_sm">
+		                                			<button type="button" class="btn btn-primary pull-right">불러오기</button>
+		                                			<input type="file" class="file_input_hidden">
+		                                		</div>
+		                                	</div>
+		                                	<div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<label>배경이 투명한 30x30px 사이즈의 png,gif 파일을 입력하세요.</label>
+	                                            	</div>
+	                                          </div>
+				                        </div>
+				                     </div>
+				                </div>   
+                              </div>
+                              <div class="modal-footer">
+                                  <a href="facility_01.html" type="button" class="btn btn-success">만들기</a>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+			<!-- End categoryModal -->
+			
+			<!-- Start editCategoryModal -->
+			<div class="modal inmodal fade" id="editCategoryModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                          <div class="modal-content">
+                              <div class="modal-header no_margin_padding">
+                                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                  <h4 class="modal-title text-left"><i class="fa fa-asterisk"></i> 카테고리 수정</h4>
+                              </div>
+                              <div class="modal-body no_margin_padding no_background">
+                                  <div class="row">
+				                <div class="col-lg-12">
+				                    <div class="ibox float-e-margins">
+				                        <div class="ibox-content">
+				                        	<div class="row">
+				                        		<div class="col-sm-12">
+	                                            		<input type="text" id="category_korean_02" class="form-control" placeholder="카테고리 국문명을 입력해주세요.">
+	                                            	</div>
+				                        	</div>
+                                            	   <div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<input type="text" class="form-control" placeholder="카테고리 영문명을 입력해주세요.">
+	                                            	</div>
+	                                          </div>
+	                                          <div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<label>카테고리명은 10까지만 입력 가능합니다.</label>
+	                                            	</div>
+	                                          </div>
+	                                          <div class="hr-line-dashed"></div>
+		                                	<div class="row">
+		                                		<div class="col-xs-9 col-sm-9">
+		                                			<input type="text" class="form-control" placeholder="아이콘 파일을 입력하세요.">
+		                                			<button type="button" class="close del_txt_btn">X</button>
+		                                		</div>
+		                                		<div class="col-xs-3 col-sm-3 file_input_div file_input_sm">
+		                                			<button type="button" class="btn btn-primary pull-right">불러오기</button>
+		                                			<input type="file" class="file_input_hidden">
+		                                		</div>
+		                                	</div>
+		                                	<div class="hr-line-dashed"></div>
+	                                          <div class="row">  	
+	                                            	<div class="col-sm-12">
+	                                            		<label>배경이 투명한 30x30px 사이즈의 png,gif 파일을 입력하세요.</label>
+	                                            	</div>
+	                                          </div>
+				                        </div>
+				                     </div>
+				                </div>   
+                              </div>
+                              <div class="modal-footer">
+                              	<button type="button" class="btn btn-danger">삭제</button>
+                                  <button type="button" class="btn btn-success">수정</button>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+			<!-- End editCategoryModal -->
+        	</div>
+     </div>
+	
+	<!-- JS library -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<script src="js/plugins/jqGrid/i18n/grid.locale-en.js"></script>
+    	<script src="js/plugins/jqGrid/jquery.jqGrid.min.js"></script>
+    	<script src="js/plugins/clockpicker.js"></script>
+    	<script src="js/plugins/iCheck/icheck.min.js"></script>
+	<!-- javascript customize -->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// menu tab setting
+			$('.tab-panels .tabs li').on('click', function() {
+			        var $panel = $(this).closest('.tab-panels');
+
+			        $panel.find('.tabs li.panelActive').removeClass('panelActive');
+			        $(this).addClass('panelActive');
+
+			        var panelToShow = $(this).attr('rel');
+
+			        // panel hide
+			        $panel.find('.panelContent.panelActive').hide('fast', showNextPanel);
+
+			        // show panel
+			        function showNextPanel() {
+			            $(this).removeClass('panelActive');
+
+			            $('#'+panelToShow).show('fast', function() {
+			                $(this).addClass('panelActive');
+			            });
+			        }
+		    });
+
+			$('#categoryModal').on('shown.bs.modal', function () {
+			  	$('#category_korean_01').focus();
+			});
+
+			$('#editCategoryModal').on('shown.bs.modal', function () {
+			  	$('#category_korean_02').focus();
+			});
+
+			// ClockPicker
+			$('.clockpicker').clockpicker();
+
+			// Checkbox
+			$('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green'
+                });
+		});
+	</script>
+</body>
+</html>
